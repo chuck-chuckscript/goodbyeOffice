@@ -1,0 +1,35 @@
+.group{
+    position: absolute;
+    top:0px;
+    right: 2%;
+    display: flex;
+}
+.group button{
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 30px;
+    width: 38px;
+    height: 38px;
+    /* border: none; */
+    background-color: transparent;
+    background-size: cover;
+    transition: .4s ease;
+}
+@media screen and (max-width: 500px) {
+    .group{
+        top:-10px;
+    }
+    .group button{
+        font-size: 25px;
+    }
+}
+
+.group button.disable{
+    opacity: 0.5;
+}
+

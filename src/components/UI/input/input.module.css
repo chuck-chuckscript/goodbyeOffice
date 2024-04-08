@@ -1,0 +1,19 @@
+.input{
+    background-color: rgb(235, 235, 235);
+    border: none;
+    outline: none;
+
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.input::placeholder{
+    position: relative;
+    font-family: 'Officina';
+    transition: .5s ease;
+    opacity: 1;
+}
+.input:focus::placeholder{
+    transform: translateX(-500px);
+    opacity: 0;
+}

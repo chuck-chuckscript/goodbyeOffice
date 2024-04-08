@@ -1,0 +1,31 @@
+.logo{
+
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1;
+    font-family: 'Poppins';
+    width: fit-content;
+    height: fit-content;
+
+
+    /* border: 1px solid white; */
+    span.rigth{
+        display: block;
+        text-align: right;
+    }
+    span.yellow{
+        color: #FFCF23;
+    }
+    span.small{
+        display: block;
+        // color: #FFCF23;
+        font-size: 10px;
+        line-height: 1;
+        @media screen and (max-width: 600px) {
+            font-size: 8px;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+    }
+}

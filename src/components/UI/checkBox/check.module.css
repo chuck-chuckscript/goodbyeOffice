@@ -1,0 +1,29 @@
+.checkContainer{
+    padding: 5px 0;
+    align-items: center;
+    display: flex;
+    flex: 1 0 auto;
+}
+.checkContainer p{
+    margin: 0;
+    color: rgb(161, 161, 161);
+}
+.checkBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+}
+@media screen and (max-width: 400px) {
+    .checkContainer p{
+        flex: 0 0 85%;
+        text-align: left;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,70 @@
+.connectWithCompany{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+}
+.connectWithCompany h1{
+    margin-top: 0;
+    font-size: 34px;
+    line-height: 1;
+}
+.connectWithCompany button{
+    font-size: 20px;
+}
+.connectWithCompanyImage{
+    margin-right: 3%;
+    flex: 1 0 auto;
+    color: #FF290E;
+    // height: 500px;
+    background-position: right bottom;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    // * {
+    //     margin: 5px 0;
+    // }
+
+}
+
+@media screen and (max-width: 1130px) {
+    .connectWithCompany h1{
+        text-align: center;
+    }
+    .connectWithCompany p{
+        text-align: center;
+    }
+    .connectWithCompany{
+        justify-content: center;
+    }
+    .connectWithCompanyImage{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .connectWithCompany h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    .connectWithCompany p{
+        font-size: 14px;
+    }
+    .connectWithCompany button{
+        font-size: 14px;
+    }
+    .connectWithCompany input{
+        font-size: 14px;
+    }
+    .connectWithCompany span{
+        font-size: 14px;
+    }
+    .connectWithCompany{
+        justify-content: center;
+    }
+    .connectWithCompanyImage{
+        display: none;
+    }
+}

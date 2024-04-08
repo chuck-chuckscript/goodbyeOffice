@@ -1,0 +1,389 @@
+
+
+
+  
+@font-face {
+    font-family: 'Officina';
+    src: url('../assets/fonts/OfficinaSansBook.woff'), 
+    url('../assets/fonts/OfficinaSansBold.woff');
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Officina'
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: rgb(44, 44, 44);
+
+}
+header{
+    padding: 10px;
+    background-color: #FFCE00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+}
+header button{
+    background-color: transparent;
+    border-radius: 0;
+    width: fit-content;
+    margin: 0 5px;
+    font-size: 18px;
+    transition: .2s ease;
+}
+header a{
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    color: #000;
+    border: 1px solid #00000036;
+    transition: .2s ease;
+}
+header a:hover,
+header button:hover{
+    color: white;
+    background-color: #c49c00;
+}
+main{
+    flex: 1 0 auto;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex: 0 0;
+    background-color: #FFCE00;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.modal-content > *:not(.modal-close){
+    margin: 5px 0;
+}
+.modal-close{
+    display: flex;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    right: 0;
+    font-size: 40px;
+}
+
+.forms{
+    padding: 50px 0;
+    position: relative;
+    display: none;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #c49c00;
+    gap: 10px;
+    width: 90%;
+    margin: 10px auto;
+    flex-direction: column;
+
+    overflow: hidden;
+    transform: scale(0) translate(0, -50%);
+    transition:.5s ease;
+    opacity: 0;
+    /* visibility: hidden; */
+    
+    
+}
+#album{
+    width: 500px;
+}
+.fileDiv{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    /* border: 1px solid #000; */
+}
+.fileDiv-file{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.lists{
+    /* display: none; */
+    width: 90%;
+    padding: 30px 0;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid #000;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+#calendar{
+
+
+    margin: 0 auto;
+    width: fit-content;
+}
+#calendar td{
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+#calendar td.border{
+    border: 1px solid #00000048;
+}
+#calendar td div{
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+}
+span.small{
+    font-size: 14px;
+}
+span.name{
+    overflow: hidden;
+    width: 6em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+#calendar th{
+    /* border: 1px solid #000; */
+    padding: 10px;
+    background-color: #c49c00;
+    border-radius: 20px;
+}
+.has-event{
+    background-color: #FFCE00;
+}
+*.hide{
+    display: none;
+}
+button.close{
+    top: 0px;
+    right: 0px;
+    margin: 10px;
+    position: absolute;
+    width: fit-content;
+
+}
+input, button, textarea, select{
+    border: 1px solid #0000002a;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+}
+button{
+    cursor: pointer;
+}
+input:focus{
+    transition: .2s ease;
+    outline: none;
+    box-shadow: 0px 0px 10px #FFCE00;
+}
+textarea:focus{
+    transition: .2s ease;
+    outline: none;
+    box-shadow: 0px 0px 10px #FFCE00;
+}
+textarea{
+    resize: none;
+    overflow-y: hidden;
+}
+
+button.cfp{
+    border-color: #FFCE00;
+    background-color: #FFCE00;
+}
+button.cfp:hover{
+    border-color: black;
+    transition: .2s ease;
+    background-color: transparent;
+}
+
+form{
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form > *{
+    margin: 5px 0;
+}
+
+#events{
+    width: 320px;
+
+}
+.service{
+    width: 90%;
+
+}
+.card{
+    margin: 10px auto;
+    padding: 20px;
+    width: 420px;
+    height: 500px;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+}
+.card.active{
+    display: flex;
+}
+.card img{
+    margin: 0px 0px 10px 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 20px;
+    flex: 0 0 auto;
+}
+.card div{
+    width: 100%;
+    flex: 1 0 auto;
+}
+.card h2{
+    display: flex;
+    justify-content: space-between;
+}
+.card pre{
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+.card button{
+    width: 100%;
+    flex: 0 0 auto;
+}
+#articleForm textarea{
+    min-height: 100px;
+    overflow-y: hidden;
+}
+.post{
+    
+    margin: 10px auto;
+    width: 90%;
+}
+.post-preview{
+    display: none;
+    overflow: hidden;
+    margin: 20px 0;
+    /* display: none; */
+    padding: 10px;
+    background-color: rgb(233, 233, 233);
+}
+.post-preview h2{
+    margin-bottom: 10px;
+}
+.post-preview.active{
+    display: block;
+}
+.swiper-container{
+    display: none;
+    width: 600px;
+    height: 400px;
+
+}
+.swiper-container.active{
+    display: block;
+}
+.mySwiper2{
+    width: 100%;
+    height: 80%;
+
+}
+.mySwiper{
+    width: 100%;
+    margin-top: 5px;
+    height: 18%;
+
+}
+.swiper-slide{
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .swiper-slide img{
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+ }
+
+.del{
+    padding: 50px 0;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    transform: scale(0) translate(0, -50%);
+    transition:.5s ease;
+    opacity: 0;
+}
+*.open{
+    display: flex;
+    opacity: 1;
+    transform: scale(1) translate(0, 0%);
+
+}
+
+.auth{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    
+    margin: 0 auto;
+    padding: 50px 10px;
+    width: 400px;
+}

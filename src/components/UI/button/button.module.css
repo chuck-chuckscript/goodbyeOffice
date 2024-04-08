@@ -1,0 +1,9 @@
+.btn{
+    background-color: #FFCF23;
+    /* color: ; */
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Officina';
+    outline: none;
+}

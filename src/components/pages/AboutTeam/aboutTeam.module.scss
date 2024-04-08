@@ -1,0 +1,62 @@
+.main{
+    width: 100%;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    // padding: 30px 0;
+    // @media screen and (max-width: 1400px) {
+    //     width: 90%;
+    // }
+    h1{
+        font-family: 'Officina';
+        margin: 20px 0;
+    }
+}
+
+.team{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(180deg, #dbb21e, black);
+    div.marks{
+        position: absolute;
+        top: 0;
+        line-height: 0.8;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        z-index: 1;
+        h1{
+            font-family: 'Poppins';
+            font-size: 90px;
+            span{
+                color: #ffcf23;
+            }
+        }
+    }
+    .marq{
+        overflow: hidden;
+    }
+    .slider{
+
+        z-index: 4;
+        
+        height: 600px;
+
+        *.card{
+    
+            overflow: hidden;
+            border-radius: 10px 100px;
+
+
+            z-index: 2;
+        }
+        &.active{
+            display: none !important;
+        }
+        @media screen and (max-width: 500px) {
+            height: 500px;
+        }
+    }
+    
+}

@@ -1,0 +1,142 @@
+
+
+.window{
+    position: relative;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    & > h1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        div{
+            display: flex;
+            button{
+                margin: 0 10px;
+                
+                &.disabled{
+                    transition: .2 ease;
+                    opacity: 0.5;
+                }
+            }
+
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 20px;
+        }
+    }
+}
+.grabSelect{
+
+    position: relative;
+
+    /* padding: 0 20px; */
+    /* width: 30; */
+    width: 100%;
+    cursor: grab;
+    &:active{
+        cursor: grabbing;
+    }
+
+}
+
+.wrapper{
+    width: 100%;
+    height: fit-content;
+
+    // border: 1px solid #000;
+
+
+    cursor: grab;
+    &:active{
+        cursor: grabbing;
+    }
+
+}
+
+
+
+
+
+.item{
+    padding: 10px 0px;
+
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(218, 218, 218);
+
+    user-select: none;
+    height: 500px !important;
+    border-radius: 20px;
+    h1{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Officina';
+        font-size: 20px;
+
+        span{
+            line-height: 1;
+        }
+        margin-bottom: 5px;
+    }
+    pre{
+        font-family: 'Officina';
+        white-space: pre-line;
+        line-height: 1;
+        text-align: left;
+    }
+    button{
+
+        padding: 10px 0;
+        width: 90%;
+        font-size: 20px;
+        border: 2px solid #FFCF23;
+        background-color: #FFCF23;
+        border-radius: 20px;
+        transition: .4s ease;
+        &:hover{
+            background-color: transparent;
+            border: 2px solid black;
+        }
+    }
+    img{
+        margin: 10px 0;
+        width: 90%;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 20px;
+        height: 200px;
+    }
+    & > div{
+        width: 90%;
+        flex: 1 0 auto;
+        // border: 1px solid #000;
+    }
+}
+
+
+
+
+.textBlock{
+
+    flex: 1 0 auto;
+    width: 90%;
+}
+
+@media screen and (max-width: 500px) {
+    .item p{
+        font-size: 14px;
+    }
+    .item button{
+        font-size: 14px;
+    }
+}

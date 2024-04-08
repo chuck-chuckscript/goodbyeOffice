@@ -1,0 +1,17 @@
+.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: red;
+    border: 1px solid #0000004d;
+    margin: 10px 0;
+    font-size: 30px;
+    padding: 10px;
+    font-family: 'Officina';
+    border-radius: 10px;
+    
+
+    @media screen and (max-width: 768px) {
+           font-size: 20px; 
+    }
+}

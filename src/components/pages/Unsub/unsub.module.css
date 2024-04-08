@@ -1,0 +1,82 @@
+.unsubContainer{
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex: 1 0 auto;
+}
+
+
+.unsubContainer > div:nth-child(2){
+
+    display: flex;
+    border: 3px solid blue;
+    justify-content: center;
+    align-items: center;
+}
+.containerForFrom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0 auto;
+    width: 600px;
+}
+.containerForFrom button{
+    background-color: #ffcf23;
+}
+.link{
+
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background-color: #ffcf23;
+    width: fit-content;
+    margin: 10px auto;
+}
+.containerForFrom h1{
+    line-height: 1;
+    font-size: 50px;
+    text-align: center;
+}
+.containerForFrom p{
+    text-align: center;
+    line-height: 1;
+}
+.containerForFrom button{
+    font-size: 20px;
+}
+@media screen and (max-width: 620px){
+    .containerForFrom h1{
+        font-size: 40px;
+    }
+    .containerForFrom{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 420px){
+    .containerForFrom{
+        width: 300px;
+    }
+    .containerForFrom h1{
+        font-size: 30px;
+    }
+    .containerForFrom button, .containerForFrom input{
+        font-size: 14px;
+    }
+    .containerForFrom p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 300px){
+    .containerForFrom{
+        width: 200px;
+    }
+    .containerForFrom p{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,34 @@
+.spin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+    width: 100px;
+    height: 100px;
+    background-image: url('/public/images/Group.png');
+    background-position: center;
+    background-size: cover;
+    animation: spinCircle 4s linear infinite;
+    
+  }
+  .circle{
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 102;
+  }
+  @keyframes spinCircle {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  

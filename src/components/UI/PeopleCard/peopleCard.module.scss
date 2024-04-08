@@ -1,0 +1,41 @@
+
+
+.card{
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+
+
+    // background: linear-gradient(180deg, #dbb21e, black);
+
+    
+
+    
+    img{
+
+        // border: 1px solid red;
+        position: relative;
+        height: 100%;
+        margin: 0 auto;
+        aspect-ratio: 2/2.4;
+        object-fit: contain;
+        object-position: bottom;
+        filter: brightness(0.9) ;
+        z-index: 1;
+
+    }
+
+
+
+
+    // .overlay{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: #FFCE23; /* Цвет, который вы хотите сохранить */
+    //     mix-blend-mode: color;
+    // }
+}

@@ -1,0 +1,65 @@
+.mission{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 50px 0;
+
+    overflow: hidden;
+    h1{
+      font-size: 40px;
+      color: black;
+      margin-right: 20px;
+      @media screen and (max-width: 500px) {
+        font-size: 20px;
+      }
+    }
+    *.missionText {
+      
+      display: flex;
+      justify-content: center;
+      padding: 0 30px;
+      width: 60%;
+      align-self: center;
+    
+      align-items: center;
+      color: black;
+      p{
+
+        width: 50%;
+        
+        @media screen and (max-width:999px) {
+
+          width: 100%;
+          text-align: center;
+          
+        }
+        @media screen and (max-width:500px) {
+
+          font-size: 14px;
+          
+        }
+      }
+      @media screen and (max-width:999px) {
+        flex-direction: column;
+        width: 100%;
+        align-self: start;
+      }
+    
+    }
+    img{
+      object-fit: cover;
+      object-position: center bottom;
+      position: relative;
+      // flex: 0 0 60%;
+      // border: 1px solid #000;
+      margin-top: 20px;
+      height: 450px;
+      @media screen and (max-width: 999px) {
+        height: 300px;
+      }
+    }
+}
+
+
+
+  

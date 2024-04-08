@@ -1,0 +1,25 @@
+
+.main{
+  position: relative;
+    width: 100%;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+    z-index: 1;
+    min-height: 100%;
+    flex: 1 0 auto;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Officina Bold';
+}
+.main > *{
+  font-family: 'Officina';
+}
+
+
+
+
+
+
+

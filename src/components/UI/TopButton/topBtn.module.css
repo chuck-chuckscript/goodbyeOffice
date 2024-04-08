@@ -1,0 +1,26 @@
+.btn{
+    position: fixed;
+    z-index: 1000;
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border: none;
+    opacity: 0;
+    background-color: transparent;
+    visibility: hidden;
+    transition: .4s ease;
+
+    
+    background-image: url('/public/images/arrowUp.svg');
+    background-size: cover;
+}
+.btn.active{
+    opacity: 1;
+    visibility: visible;
+}

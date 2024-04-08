@@ -1,0 +1,38 @@
+.links{
+    display: flex;
+    width: 90%;
+
+    justify-content: space-evenly;
+    a{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        svg{
+            width: 30px;
+            height: 30px;
+            
+        }
+
+
+        
+
+    
+        &:first-child{
+            background-color: red;
+            color: white;
+        }
+        &:nth-child(2){
+            background-color: rgb(59, 199, 59);
+            color: white;
+        }
+        &:nth-child(3){
+            background-color: rgb(77, 132, 252);
+            color: white;
+        }
+    }
+
+}
