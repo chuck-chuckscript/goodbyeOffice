@@ -11,6 +11,7 @@
 + axios
 + swiper
 + mobx
++ react-router
 
 ## Ссылка на готовый проект
 <https://fcgoodbye.startuphelper.ru>
